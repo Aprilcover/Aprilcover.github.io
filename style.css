@@ -1,0 +1,50 @@
+/* 初始化样式 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Helvetica, "PingFang sc","Microsoft Yahei",sans-serif;
+}
+
+/* 通用变量 */
+:root{
+--one-level-color:#F6F5F5;
+--two-level-color:#D3E0EA;
+--three-level-color:#1687A7;
+--forth-level-color:#276678;   
+}
+
+/* 导航框 */
+header{
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    padding: 0 40px;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+    background-color: var(--one-level-color);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--three-level-color);
+}
+
+header nav{
+    justify-self: end;
+}
+
+header nav i{
+    color: var(--forth-level-color);
+}
+
+header nav a{
+    font-size: 20px;
+    color: var(--three-level-color);
+    text-decoration: none;
+    margin: 0 24px;
+}
